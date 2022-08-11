@@ -1,0 +1,51 @@
+{
+  "name": "examen-app",
+  "description": "Proyecto examen",
+  "author": "Rolando-D3v",
+  "version": "1.5.0",
+  "private": true,
+  "dependencies": {
+    "@hookform/resolvers": "^2.7.1",
+    "axios": "^0.21.1",
+    "cross-env": "6.0.2",
+    "dayjs": "^1.10.6",
+    "rc-pagination": "^3.1.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.12.2",
+    "react-icons": "^4.2.0",
+    "react-particles-js": "2.4.0",
+    "react-router-dom": "^5.2.0",
+    "react-toastify": "^8.0.1",
+    "sass": "^1.37.5",
+    "sweetalert2": "^11.1.2",
+    "timeago.js": "^4.0.2",
+    "update-electron-app": "^1.2.0",
+     "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "prettier": "^1.4.4",
+    "react-scripts": "3.1.2",
+    "wait-on": "3.3.0"
+  },
+
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

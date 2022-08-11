@@ -1,0 +1,27 @@
+
+
+.wrapper_screen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: minmax(400px, 400px) auto;
+
+  @media screen and (max-width: 465px) {
+    grid-template-columns: minmax(100%, 400px) auto;
+  }
+
+  .right_side {
+    background: var(--light);
+    padding: 50px 55px;
+    min-height: 500px;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+
+    @media screen and (max-width: 425px) {
+      padding: 50px 35px;
+    }
+  }
+}

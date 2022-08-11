@@ -1,0 +1,31 @@
+.sideDatos {
+  grid-area: SIDATOS;
+  padding: 0 8px;
+
+  @media screen and (max-width: 640px) {
+    padding: 0 0px;
+  }
+
+  &__progress {
+    background-color: var(--gris-pregunta);
+    padding: 2px 0 2px 6px;
+    border: 1px solid #42424242;
+    border-radius: 4px;
+    height: 160px;
+
+    @media screen and (max-width: 640px) {
+      height: 48px;
+    }
+
+    &--pre {
+      font-size: 13px;
+      //   margin-top: 0px;
+      color: #000;
+
+      .sideDatos__numero {
+        font-size: 15px;
+        color: #000;
+      }
+    }
+  }
+}

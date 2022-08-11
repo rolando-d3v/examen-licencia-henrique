@@ -1,0 +1,348 @@
+.sidebar {
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 99;
+
+  // transform: translate3d(-100%, 0, 0);
+  transform: translateX(-100%);
+  visibility: visible;
+  
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+
+  transition: all 0.4s ease;
+  background-color: #212121;
+}
+//aparece el sidebar
+.sidebar-visible.sidebar {
+  // transform: translate3d(0, 0, 0);
+  transform: translateX(0%);
+  visibility: visible;
+
+}
+
+//header  logo
+.header_logo {
+  padding: 9px 1.2rem;
+  display: flex;
+  margin: 0 auto;
+  height: 64px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #615b5b;
+
+  div {
+    display: flex;
+    align-items: flex-end;
+    .text_logo {
+      height: 30px;
+      color: #fff;
+      font-size: 1.4rem;
+      margin-left: 12px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      &:hover {
+        color: #00a2ff;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+//header  avatar
+.header_avatar {
+  border-bottom: 1px solid #615b5b;
+  padding: 9px 1rem 9px 1.2rem;
+  div {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .text_user_name {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+    &:hover {
+      color: #00a2ff;
+      transition: all 0.3s ease;
+    }
+  }
+
+  img {
+    width: 12%;
+    margin-right: 7px;
+    border-radius: 50%;
+  }
+}
+
+.div_links {
+  padding: 9px 1.1rem;
+  display: flex;
+  flex-direction: column;
+
+  .sidebar_link {
+    text-align: start;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #42424242;
+      transition: all 0.3s ease;
+    }
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+//BUTTON  DE SIDEBAR
+.div_buttonx {
+  margin: 0.7rem 0;
+  .buttonx {
+    background-color: var(--btn-blue);
+    outline: none;
+    border-radius: 3px;
+    text-align: start;
+    width: 85%;
+    border: none;
+    color: #fafdff;
+    margin: 0.3em 1.2em;
+    padding: 0.45em 0.8em;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s ease-out all;
+    cursor: pointer;
+    display: inline-block;
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.2);
+      background-color: var(--mode-dark);
+    }
+  }
+
+  .btn_iniciador {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    img {
+      margin-top: 5px;
+      border-radius: 4px;
+    }
+
+    .punto_img {
+      position: absolute;
+      background-color: red;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      bottom: 8px;
+      right: 49px;
+    }
+
+    .punto-animate {
+      animation: App-logo-spin infinite 2s linear;
+      @keyframes App-logo-spin {
+        50% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0);
+        }
+      }
+    }
+  }
+
+  .btn_exit_test {
+    background-color: red;
+  }
+}
+
+.div_link_test {
+  padding: 2px 1.1rem;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  transition: 0.3s ease-out all;
+
+  //TIME CRONOMETRO
+
+  .div_crono {
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 8px;
+
+    .crono_title {
+      color: #fff;
+      font-size: 15px;
+    }
+    .separador {
+      font-size: 18px;
+      margin: 0 8px;
+      color: #fff;
+    }
+    .crono_time {
+      // width: 100%;
+      width: 62px;
+
+      color: #fff;
+      font-size: 15px;
+    }
+  }
+
+  // OPCIONES DE TEST
+  .link_test {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #42424242;
+
+    color: #fff;
+    font-size: 14px;
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+    margin: 6px 0;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #12473e;
+      opacity: 1;
+    }
+
+    .text_test {
+      display: block;
+    }
+
+    .div_test_img {
+      width: 100%;
+
+      .icon_test_img {
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .tema_terminado {
+    pointer-events: none;
+    background-color: #12473e;
+    opacity: 1;
+    // color: #00a2ff;
+  }
+
+  .tema_terminado::after {
+    display: inline;
+    // margin: 0 auto;
+    // width: 110px;
+    text-align: center;
+    content: "Completado";
+    font-weight: 600;
+    border-radius: 4px;
+    // padding: 10px 10px;
+    // background-color: #008250;
+    background-color: #c8402e;
+  }
+
+  .index_test {
+    background-color: #12473e;
+    opacity: 1;
+  }
+}
+
+.open_test {
+  display: block;
+}
+
+.content_btn_result {
+  position: relative;
+}
+
+.manito {
+  font-size: 26px;
+  position: absolute;
+  margin-left: 110px;
+  top: -42px;
+  color: rgba(255, 255, 0, 0.825);
+  animation: manitoAnimate 1s linear infinite;
+
+  @keyframes manitoAnimate {
+    0% {
+      transform: translate(0px);
+    }
+    50% {
+      // transform: rotatez(50deg);
+      transform: translateY(8px);
+      opacity: 0.5;
+    }
+  }
+}
+
+.text_info_result {
+  color: #fff;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+}
+
+.div_btn {
+  display: flex;
+  justify-content: center;
+  margin: 34px 0 4px 0;
+  width: 100%;
+
+  .btn_resultados {
+    background-color: #097a42;
+    padding: 10px 10px;
+    width: 84%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    transition: 0.3s ease-out all;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.2);
+      background-color: var(--mode-dark);
+    }
+    .link_tex {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  }
+}

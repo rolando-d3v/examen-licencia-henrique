@@ -1,0 +1,32 @@
+.div_mainx {
+  display: flex;
+  flex-direction: column;
+ 
+  .div_routes {
+    //para que ocupe todo el background en el fondo sin  que se vea el body
+    overflow-y: auto;
+    padding: 1rem;
+    min-height: calc(100vh - 64px);
+    height: 100%;
+   
+  }
+}
+
+.marginOFFx {
+  margin-left: 250.4px;
+  width: auto;
+  transition: all 0.4s ease;
+}
+
+.marginONx {
+  margin-left: 0px;
+  transition: all 0.4s ease;
+}
+
+
+
+@media (max-width: 780px) {
+  .div_mainx {
+    margin-left: 0;
+  }
+}

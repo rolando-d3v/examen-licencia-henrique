@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+@import 'variables';
+@import 'colores';
+
+//components
+@import 'button';
+
+
+
+// mac de mi laptop rolando ojo 
+// 7C-D3-0A-83-FC-21
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; //quitar espaciados de las cajas
+  
+  
+  @media screen and (max-width: 730px) {
+    font-size: 12px ;
+  }
+ 
+}
+
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  // text-decoration: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
+
+//className para modo dark
+.themeDark {
+  background-color: var(--mode-dark);
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+
+.themeLight {
+  background-color: var(--mode-claro) ;
+  transition: all 0.35s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+//funcion para remover el scroll del body
+.removeScrollBody {
+  overflow: hidden;
+}  
+//quita el scroll de un div o box
+.detscroll-hidden::-webkit-scrollbar {
+  display: none;
+}  
+
+
+
+

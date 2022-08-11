@@ -1,0 +1,35 @@
+.answer {
+  padding: 0px 5px 0px 6px;
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-start;
+
+  .btn_opcion {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 2px 6px;
+    width: 26px;
+    height: 22px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition: ease-out 0.3s all;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: var(--verde-epe);
+      color: white;
+    }
+  }
+  .respuesta_opcion {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+.selected {
+  cursor: pointer;
+  color: #fffdfd;
+  background-color: #f10e0e;
+}

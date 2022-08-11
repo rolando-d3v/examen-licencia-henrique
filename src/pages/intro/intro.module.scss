@@ -1,0 +1,202 @@
+.content_intro {
+  position: relative;
+  // height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Dosis" !important;
+}
+
+.content_bienvenido {
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(12, 11, 11, 0.9);
+  border-radius: 8px;
+
+  > h4 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+  }
+  .text_app {
+    font-size: 2rem;
+  }
+  .bienvenido_text {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    position: relative;
+    margin: 4px;
+  }
+}
+
+.cubo_gif {
+  position: absolute;
+  right: 0;
+  z-index: 89;
+  > img {
+    width: 180px;
+    // height: 105px;
+    opacity: 0.95;
+    border-radius: 0px 0px 0px 50px;
+  }
+
+  @media screen and (max-width: 730px) {
+    display: none;
+  }
+}
+
+.content_data {
+  display: flex;
+  justify-content: center;
+  z-index: 55;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+
+  .container_footer {
+    height: 90px;
+    background-color: #0c0b0b96;
+    width: 98%;
+    padding: 14px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+
+    .data_intro {
+      display: flex;
+      flex-direction: column;
+      margin-right: 50px;
+      width: auto;
+      .text_intro {
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+        @media screen and (max-width: 530px) {
+          font-size: 14px;
+        }
+      }
+      .icon_wasap {
+        color: #0de99f;
+      }
+      .text_portafolio {
+        color: #fff;
+        &:hover {
+          color: #d5f810;
+        }
+      }
+    }
+  }
+  .btn_login {
+    background: #000;
+    border-radius: 4px;
+    z-index: 999;
+    cursor: pointer;
+    height: 46px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+    > span {
+      padding: 2px 14px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    > img {
+      margin: 8px 10px;
+      width: 24px;
+    }
+
+    &:hover {
+      color: #0de99f;
+    }
+
+    animation: boton_login_animate infinite 12s linear;
+    @keyframes boton_login_animate {
+      0% {
+        transform: translateX(0px);
+      }
+      25% {
+        transform: translateX(300px);
+      }
+      50% {
+        transform: translateX(600px);
+      }
+    }
+
+    @media screen and (max-width: 1290px) {
+      display: none;
+    }
+  }
+}
+
+.logo_png {
+  position: absolute;
+  right: 24px;
+  bottom: 11px;
+  z-index: 99;
+  animation: logoAnimate infinite 2s linear;
+
+  > img {
+    width: 72px;
+    // @media screen and (max-width: 730px) {
+    //   // display: none;
+    //   width: 40px;
+    // }
+  }
+}
+
+@keyframes logoAnimate {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.btn_login2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 300px;
+  background: #000;
+  border-radius: 6px;
+  z-index: 999;
+  cursor: pointer;
+  height: 48px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  .text_login2 {
+    padding: 2px 14px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    .icon_login2 {
+      margin-left: 14px;
+    }
+  }
+  > img {
+    margin: 4px 5px;
+    width: 34px;
+  }
+
+  &:hover {
+    color: #0de99f;
+  }
+
+  @media screen and (min-width: 1290px) {
+    display: none;
+  }
+}

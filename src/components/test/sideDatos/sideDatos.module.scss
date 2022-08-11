@@ -1,0 +1,60 @@
+.sideDatos {
+  grid-area: SIDATOS;
+  padding: 0 8px;
+
+  @media screen and (max-width: 640px) {
+    padding: 0 0px;
+  }
+}
+
+.content_progress {
+  background-color: var(--gris-pregunta);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 10px 0 8px 8px;
+  height: 180px;
+  border: 1px solid #42424242;
+  border-radius: 4px;
+
+  @media screen and (max-width: 640px) {
+    padding: 6px 16px 6px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 62px;
+  }
+
+  .progress_pregunta {
+    color: #000;
+
+    .pregunta {
+      font-size: 17px;
+      color: #000;
+    }
+    .numero {
+      font-size: 18px;
+      color: #000;
+    }
+  }
+
+  .img_datos {
+    width: 85px;
+    height: 85px;
+    @media screen and (max-width: 640px) {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .total_pre {
+    font-size: 15px;
+    color: #000;
+
+    .total {
+      font-size: 17px;
+      color: #000;
+    }
+  }
+}
